@@ -8,8 +8,11 @@ function LoginPage() {
   const navigate = useNavigate();
 
   const handleGoogleLogin = () => {
-    window.location.href = "https://hiring.reachinbox.xyz/api/v1/auth/google-login?redirect_to=https://accounts.google.com";
+    // Here you would typically integrate with Google OAuth
+    // For demonstration, we'll just navigate to a hypothetical Google login page
+    navigate('/google-login');
   };
+
   const handleCreateAccount = () => {
     // Navigate to the create account page
     navigate('/create-account');

@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { Home, Users, Inbox, Send, List, PieChart, Sun, Moon, Mail, RotateCw } from 'lucide-react';
 import './CSS/OneboxPage.css';
 import logo11 from './Assets/Logo11.png';
-import { Linkedin, Phone, Building } from 'lucide-react';
 import './CSS/EmailViewer.css';
 import './CSS/LeadDetailsSidebar.css';
 import './CSS/PopUp.css';
@@ -12,6 +11,7 @@ import './CSS/Homepage.css';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import { useEffect } from 'react';
+
 
 
 // Static inbox data
@@ -114,19 +114,18 @@ const OneboxPage = () => {
     }, [navigate]);
   };
    const handleEmailClick = () => {
-    setShowContentShower(true); // Set to true to show ContentShower when an email is clicked
+    setShowContentShower(true);
   };
 
   const refreshInbox = () => {
-    // In a real scenario, this would fetch new data
-    // For now, we'll just log a message
+    
     console.log("Refreshing inbox...");
   };
   
 
   return (
     <div className={`onebox-container ${isDarkMode ? 'dark-mode' : 'light-mode'}`}>
-      {/* Left Sidebar */}
+     
       <div className="sidebar">
         <img src={logo11} alt='reachinbox-logo' className='logo11' />
         <SidebarIcon Icon={Home} onClick={() => setActiveView('home')} />
