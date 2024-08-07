@@ -1,0 +1,179 @@
+.email-viewer {
+  font-family: Arial, sans-serif;
+  max-width: 550px;
+  min-height: 10vh;
+  margin: 10px auto;
+  padding: 20px;
+  margin-left: 360px;
+  transition: all 0.3s ease;
+  border: 1px solid #888;
+  overflow-y: auto; /* Enable vertical scrolling */
+  max-height: 100vh; /* Ensure the component has a height limit for scrolling */
+
+  /* Hide scrollbar */
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.email-viewer::-webkit-scrollbar {
+  display: none;  /* Chrome, Safari, and Opera */
+}
+
+.header-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.user-info h2 {
+  font-size: 18px;
+  margin: 0;
+}
+
+.user-info span {
+  font-size: 14px;
+  color: #888;
+  display: block;
+ 
+}
+
+.meeting-status {
+  width: 160px;
+  height: 20px;
+  display: flex;
+  padding: 5px;
+  align-items: center;
+  font-size: 14px;
+  background-color: rgba(44, 44, 44, 0);/* or #fff for light mode */
+ border:  1px solid #444;
+  border-radius: 8px;
+}
+
+.status-indicator {
+  width: 10px;
+  height: 10px;
+  background-color: #ffd700;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.action-buttons button {
+  width: 70px;
+  height: 30px;
+  background: none;
+  border: none;
+  color: inherit;
+  cursor: pointer;
+  /* margin-left: 10px; */
+  background-color: rgba(44, 44, 44, 0); /* or #fff for light mode */
+  border: 1px solid #444;
+  border-radius: 8px;
+}
+.reply-button-container {
+  /* left: -200px; */
+  /* Or the background color of the container */
+
+  position: sticky;
+  top: 460px;
+  z-index: 100;
+  padding: 10px 0;
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+  /* border-bottom: 1px solid #888; */
+}
+
+.email-content {
+  background-color: rgba(44, 44, 44, 0); /* Transparent black */
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  border: 0.5px solid #888;
+  overflow-y: auto;
+}
+hr{
+  max-width: 550px;
+  border: 0.1px solid #888;
+}
+.today{
+  margin-left: 250px;
+}
+
+.horizontal-line {
+  margin-top: -50px;
+}
+
+.email-header {
+ 
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 15px;
+}
+
+.email-header-left {
+  flex-grow: 1;
+}
+
+.email-header-right {
+  flex-shrink: 0;
+  text-align: right;
+}
+
+.email-header h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.email-header p {
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.email-header span {
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.email-date {
+  font-size: 14px;
+  color: #888;
+}
+.reply-button {
+ 
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.view-all {
+  width: 150px;
+  height: 10px;
+  background-color: #888;
+  background-color: rgba(44, 44, 44, 0); 
+  border-radius: 8px;
+  border: none;
+  color: #3498db;
+  cursor: pointer;
+  margin-left: 200px;
+  /* margin-top: -20px; */
+}
+
+
+
+/* Responsive design */
+@media (max-width: 600px) {
+  .header-section {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .action-buttons {
+    margin-top: 10px;
+  }
+}

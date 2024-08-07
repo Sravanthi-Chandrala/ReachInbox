@@ -1,0 +1,160 @@
+:root {
+    --bg-color: #ffffff;
+    --text-color: #333333;
+    --label-color: #666666;
+    --icon-color: #333;
+    --line-color: #e0e0e0;
+    --scrollbar-track: rgba(0, 0, 0, 0.1);
+    --scrollbar-thumb: rgba(0, 0, 0, 0.2);
+  }
+  
+  .dark-mode {
+    --bg-color: #1e1e1e;
+    --text-color: #ffffff;
+    --label-color: #cccccc;
+    --icon-color: #cccccc;
+    --line-color: #444444;
+    --scrollbar-track: rgba(255, 255, 255, 0.1);
+    --scrollbar-thumb: rgba(255, 255, 255, 0.2);
+  }
+  
+  .lead-details-sidebar {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    width: 300px;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    border-left: 1px solid var(--line-color);
+    margin-top: -65px;
+    overflow-y: auto;
+    max-height: 90vh;
+    /* box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1); */
+    overflow-y: auto;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none; 
+  }
+  .lead-details-sidebar::-webkit-scrollbar {
+    display: none;  /* Chrome, Safari, and Opera */
+  }
+  
+  
+  .section {
+    margin-bottom: 30px;
+  }
+  
+  h2 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: var(--text-color);
+    border-bottom: 2px solid var(--line-color);
+    padding-bottom: 5px;
+  }
+  
+  .detail-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .label {
+    color: var(--label-color);
+    font-weight: 600;
+  }
+  
+  .value {
+    color: var(--text-color);
+    word-break: break-word;
+  }
+  
+  .campaign h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+    color: var(--text-color);
+  }
+  
+  .campaign-meta {
+    font-size: 14px;
+    color: var(--label-color);
+    margin-bottom: 15px;
+  }
+  
+  .campaign-steps {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    position: relative;
+  }
+  
+  .campaign-steps li {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+  }
+  
+  .step-icon-container {
+    position: relative;
+    margin-right: 15px;
+  }
+  
+  .icon.email-icon {
+    width: 60px;
+    height: 30px;
+    color: var(--icon-color);
+    /* background-color: rgba(74, 74, 244, 0.1); */
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+  }
+  
+  .vertical-line {
+    position: absolute;
+    top: 30px;
+    left: 50%;
+    width: 2px;
+    height: calc(100% - 10px);
+    background-color: var(--line-color);
+    transform: translateX(-50%);
+  }
+  
+  .campaign-steps li:last-child .vertical-line {
+    display: none;
+  }
+  
+  .step-content {
+    flex-grow: 1;
+  }
+  
+  .step-text {
+    font-weight: bold;
+    color: var(--text-color);
+  }
+  
+  .step-status {
+    font-size: 14px;
+    color: var(--label-color);
+    display: block;
+    margin-top: 5px;
+  }
+  
+  .status-icon {
+    margin-right: 5px;
+    vertical-align: middle;
+    color: var(--icon-color);
+  }
+  
+  /* Custom scrollbar for webkit browsers */
+  .lead-details-sidebar::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  .lead-details-sidebar::-webkit-scrollbar-track {
+    background: var(--scrollbar-track);
+  }
+  
+  .lead-details-sidebar::-webkit-scrollbar-thumb {
+    background-color: var(--scrollbar-thumb);
+    border-radius: 4px;
+  }
+  
